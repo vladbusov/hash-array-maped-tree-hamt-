@@ -539,4 +539,5 @@ void deletekey(Table *tab, int key){
 		p->bitmap[i] = 0;
 	deleteTable(p);
 	par->table[adr] = NULL;
+	}
 }
