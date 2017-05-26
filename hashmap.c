@@ -526,16 +526,17 @@ int getlvl(Table *tab, int Key_s, int lvl){
 
  }
 
- void deletekey(Table *tab, int key){
-	 int adr = hash(key, getlvl(tab,key,1));
-	 Table * par = getparant(tab, key, 1);
-	 par->bitmap[adr] = 0;
-	 Table *p = fullsearch(tab, key);
-	 p->Key = 0;
-	 p->Size = 0;
-	 p->Value = NULL;
-	 for (int i = 0; i < 32; i++)
-		 p->bitmap[i] = 0;
-	 deleteTable(p);
-	 par->table[adr] = NULL;
- }
+void deletekey(Table *tab, int key){
+	int adr = hash(key, getlvl(tab, key, 1));
+	Table * par = getparant(tab, key, 1);
+	par->bitmap[adr] = 0;
+	Table *p = fullsearch(tab, key);
+	if (p != NULL){
+	p->Key = 0;
+	p->Size = 0;
+	p->Value = NULL;
+	for (int i = 0; i < 32; i++)
+		p->bitmap[i] = 0;
+	deleteTable(p);
+	par->table[adr] = NULL;
+}
