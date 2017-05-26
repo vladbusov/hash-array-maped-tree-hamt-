@@ -358,9 +358,7 @@ void print(Table *t){
 
 }
 
-void deletekey(Table *tab, int key){
 
-}
 
 void newTable(Table* t) {
 
