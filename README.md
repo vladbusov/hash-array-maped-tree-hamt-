@@ -13,3 +13,7 @@ The hash array mapped trie achieves almost hash table-like speed while using mem
 - [x] speed
 - [x] economical
 
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
