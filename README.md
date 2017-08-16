@@ -9,3 +9,10 @@ In a typical implementation of HAMT's array mapped trie, each node contains a ta
 ## Advantages of HAMTs
 -------------------------
 The hash array mapped trie achieves almost hash table-like speed while using memory much more economically. Also, a hash table may have to be periodically resized, an expensive operation, whereas HAMTs grow dynamically. Generally, HAMT performance is improved by a larger root table with some multiple of N slots; some HAMT variants allow the root to grow lazily[1] with negligible impact on performance.
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
