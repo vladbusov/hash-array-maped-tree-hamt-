@@ -1,1 +1,1 @@
-![hamt](http://imgur.com/a/UpHAP)
+![hamt](http://i.imgur.com/LbtuEa0.png)
